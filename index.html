@@ -1,38 +1,37 @@
-<html>
-    <head>
-        
-    </head>
-    <body>
-        <div id="app"></div>
-    </body>
-    <script type="text/babel">
-      const products = [
-        {
-          id: 1,
-          title: 'PC Portable Gamer HP VICTUS',
-          price: '7490 DH',
-          thumbnail : 'HP16D0195NF.jpg'
-        },
-        {
-          id: 2,
-          title: 'PC Portable Gamer HP VICTUS',
-          price: '2190 DH',
-          thumbnail : 'HP14424U3EA.jpg'
-        },
-        {
-          id: 3,
-          title: 'Pc Portable Chromebook Acer',
-          price: '3640 DH',
-          thumbnail: 'NXATHEF002.jpg'
-        },
-        {
-          id: 4,
-          title: 'PC Portable - HUAWEI',
-          price: '1270 DH',
-          thumbnail: 'HUA6901443442959.jpg'
-        },
-      ];
-      
-    </script>
-</html>
 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JavaScript Practice</title>
+</head>
+<body>
+
+    <h1>My Counter</h1>
+
+    <h2 id="count">0</h2>
+
+    <button onclick="decrement()">-</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="increment()">+</button>
+
+    <script>
+        let count = 0;
+
+        function increment() {
+            count++;
+            document.getElementById("count").textContent = count;
+        }
+
+        function decrement() {
+            count--;
+            document.getElementById("count").textContent = count;
+        }
+
+        function reset() {
+            count = 0;
+            document.getElementById("count").textContent = count;
+        }
+    </script>
+
+</body>
+</html>
